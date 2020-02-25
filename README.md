@@ -1,5 +1,5 @@
 **Spam Mailer:**
-			A Web Based Application to send upto 50 mails to multiple users at a same time.
+			A Web Based Application to send upto 50 mails to multiple users at a same time.It also has login and sign up 	form which only allows registered users to do so.
 			
 			
 ***Note:***
