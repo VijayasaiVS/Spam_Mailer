@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+.contactbox
+{
+	position: relative;
+	font-family: "Poppins",sans-serif;
+    left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #000000b2;
+	top:50%;
+}
+h2
+{
+	margin: 0%;
+	padding:0 0 20px;
+	color: rgb(238, 208, 36);
+	text-align: center;
+}
+.contactbox p
+{
+	margin: 0;
+	padding: 0px;
+	font-weight: bold;
+    color: rgb(238, 208, 36);
+}
+#name_icon,#email_icon,#phone_icon,#home2_icon{
+    color: rgb(238, 208, 36);
+    font-weight: bolder;
+    font-size: 30px;
+}
+.contactbox input
+{
+	width: 92%;
+}
+#eid,#name,#phone
+{
+	border: 2px solid cornsilk;
+	background: transparent;
+	height: 40px;
+	font-weight: bold;
+	color: cornsilk;
+	font-size: 16px;
+	padding: 0 5px;
+}
+#eid:focus,#name:focus,#phone:focus{
+    border: 2px solid greenyellow;
+}
+.contactbox .contact
+{
+    position: relative;
+    left: 38%;
+	width:150px;
+	height:40px;
+	font-family: "Poppins",sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #000000;
+	font-size: 12px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 18px;
+	border: none;	
+	font-weight: bold;
+}
+.contactbox .contact:hover{
+    font-size: 20px;
+    color: #000000;
+    animation: animate 8s linear infinite;
+    font-weight: bolder;
+    
+}
+@-webkit-keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.address{
+	text-align: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+.social_media{
+    text-align: right;
+}
+#address_detail{
+	font-weight: 100;  
+  color:cornsilk;
+}
+.social_media ul li a img{
+	margin-right: 0px;
+	height: 50px;
+	width: 50px;
+}
+.social_media ul li a{
+	text-decoration: none;
+}
+.social_media ul li a:hover img {
+	transform: scale(1.5);
+	
+}
+.social_media ul li{
+	display: inline;
+}

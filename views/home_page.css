@@ -1,0 +1,22 @@
+.welcome
+{
+    position: absolute;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    background-color: #000000a4;
+}
+.welcome .intro
+{
+    text-align: center;
+    color: rgb(238, 208, 36);
+    font-weight: bolder;
+    font-size:60px;
+}
+.welcomedescription
+{
+    color: cornsilk;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}

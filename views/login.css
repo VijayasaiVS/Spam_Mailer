@@ -1,0 +1,240 @@
+::-webkit-scrollbar{
+    width:10px;
+    background: #000000;
+}
+::-webkit-scrollbar-track{
+    box-shadow: 0 0 5px #c6ce59;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(238, 208, 36);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(192, 170, 46); 
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body
+{
+	margin: 0;
+	padding: 10;
+	background-image: url(images/bg1.jpg);
+	background-size: cover;
+	font-family: "Poppins",sans-serif;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #000000;
+	font-size: 16px;
+	height: 100%;
+	width:100%;
+}
+.loginBox
+{
+	position: absolute;
+	top:350px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: auto;
+	padding: 30px 40px;
+	box-sizing: border-box;
+	background: #000000d5;
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: fixed;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	margin: 0%;
+	padding:0 0 20px;
+	color: rgb(238, 208, 36);
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0px;
+	font-weight: bold;
+	color: rgb(238, 208, 36);
+}
+.loginBox input
+{
+	width: 100%;
+}
+#eid,#pass
+{
+	border: 2px solid cornsilk;
+	background: transparent;
+	height: 40px;
+	font-weight: bold;
+	color: cornsilk;
+	font-size: 16px;
+	padding: 0 5px;
+}
+#eid:focus,#pass:focus{
+    border: 2px solid greenyellow;
+}
+::placeholder
+{
+	color: rgba(255, 248, 220, 0.63);
+}
+
+
+.loginBox a
+{
+	color: rgba(214, 22, 22, 0.658);
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.loginBox .login
+{
+	position: absolute;
+	width:300px;
+	height:40px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;
+	border: none;	
+	font-weight: bold;
+}
+.loginBox .login:hover
+{
+	color: #000000;
+	animation: animate 8s linear infinite;
+	font-size:22px;
+	font-weight: bolder;
+}
+@-webkit-keyframes animate{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+.login:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	border-radius: 60px;
+	filter: blur(60px);
+	opacity: 0;
+	transition: 0.5s;
+}
+.loginBox .signup
+{
+	position: absolute;
+	width:300px;
+	height:40px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;	
+}
+.loginBox .signup:hover
+{
+	color: #000000;
+	animation: animate 8s linear infinite;
+	font-size:22px;
+	font-weight: bolder;
+}
+@-webkit-keyframes animate{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+.signup:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	border-radius: 60px;
+	filter: blur(60px);
+	opacity: 0;
+	transition: 0.5s;
+}
+a:hover:before
+{
+	filter: blur(20px);
+	opacity: 1;
+}
+.loginBox a:hover{
+	color: #ff0000;
+	font-weight: bold;
+}
+.backtohome,.gotomail
+{
+	position: absolute;
+	transform: translate(10%);
+	width:60px;
+	height:30px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: rgb(238, 208, 36);
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;	
+}
+.backtohome:hover,.gotomail:hover
+{
+	position: absolute;
+	transform: translate(10%);
+	width:80px;
+	height:50px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 20px;
+	line-height: 60px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: rgb(238, 208, 36);
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;	
+}

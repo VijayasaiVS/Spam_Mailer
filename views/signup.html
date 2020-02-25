@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, intial-sacle=1.0">
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="signup.css">
+		<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+	<body>
+		
+		<br>
+		<div class="loginBox">
+			<img src="images/user.png" class="user">
+			<h2>SIGN UP</h2>
+			<form method="POST" id="signup-form" action="signup">
+				<div class="row">
+				<div class="col s6">
+                <p>First Name</p>
+				<input type="text" name="first" id="first" placeholder="First Name" required>
+				</div>
+				<div class="col s6">
+				<p>Last Name</p>
+				<input type="text" name="last" id="last" placeholder="Last Name" required>
+				</div></div>
+				<div class="row">
+					<div class="col s12">
+							<p>Username</p>
+							<input type="text" name="uid" id="uid" placeholder="Enter Username" required>
+				<p>Email</p>
+                <input type="email" name="eid" id="eid" placeholder="Enter Email" required>
+				</div></div>
+				<div class="row">
+						<div class="col s12">
+				<p>Password</p>
+				<input type="password" class="validate" name="pass" id="pass" placeholder="••••••" required></div>
+				</div>
+				<input type="submit" id="signup" class="signup" value="SIGNUP">
+			</form>
+		</div>
+		<a class="backtohome" href="home.html"><i class="small material-icons">home</i></a> 
+			<br><br><br>
+			<a class="backtologin" href="login.html" ><i class="small material-icons">arrow_back</i></a> 
+	</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE htmnl>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Spam Mailer</title>
+        <link href="home.css" rel="stylesheet">
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="home_page.css">
+        <link rel="stylesheet" href="instruction_section.css">
+        <link rel="stylesheet" href="services_section.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    $(window).on('scroll', function(){
+        if ($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else 
+        {
+            $('nav').removeClass('black');
+        }
+    })
+    $(document).ready(function(){
+        $(".menu h4").click(function(){
+            $("nav ul").toggleClass("active")
+        })
+    })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="contact_section.css" rel="stylesheet">
+<script type="text/javascript" src="scrollpercentage.js"></script>    
+<script type="text/javascript">
+$(document).on('click','ul li',function(){
+    $(this).addClass('active').siblings().removeClass
+    ('active')
+})
+</script>
+</head>
+<body>
+       <a href="#home"> <div id="scroll-percent" data-scrollPercentage><div class="percentage"></div></div>
+        <div id="percentage-value"></div></a>
+<div class="responsive-bar">
+    <div class="logo">
+        <a href="#home"><img src="images/logo1.png"></a>
+    </div>
+    <div class="menu">
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('.menu').toggleClass('active')
+            $('.navbar').toggleClass('active')
+        })
+      })
+      </script>
+  <section class="sec1" id="home">
+      <div class="welcome">
+        <br>
+        <br><br>
+        <p style="color:cornsilk; text-align: center;font-weight: bold;font-size: 26px;">WELCOME TO</p>
+        <h2 class="intro">SPAM MAILER</h2>
+        <br><br><br>
+        <p class="welcomedescription">World's first <b>Spam Mailer with such a elegant design and pleasing UI</b></p>
+        <p class="welcomedescription">COME ON HOP IN and START PRANKING YOUR FRIENDS!!</p>
+        <div class="arrowdown"></div>
+      </div>
+    </section>
+  <section class="sec2" id="instructions">
+    <div class="instruction">
+      <br><br><br>
+      <h1 class="instruct_title">Instructions to use SPAM MAILER</h1>
+      <p class="steps_head"> Follow the below steps : -</p>
+      <ol>
+        <li>Click <a href="/login.html">Here</a> or Click on top right corner to Login<span style="color:red;font-size: 24px">*</span></li><br>
+        <li>Login using your Email ID and Password that you registered or <a href="/signup.html"> Sign Up</a> if you are new here</li><br>
+        <li>After Logged in successfully the page automatically redirects you to Email Spammer!!</li>
+      </ol>
+      <p class="content">Its very simple isn't it!? Come on try it out now!!</p><br>
+      <p class="terms">Terms: </p>
+      <p class="terms">*We need you to register first just to verify that you're not a Bot!!</p>
+    </div>
+  </section>
+  <section class="sec3" id="services">
+    <div class="services_section">
+      <br><br><br>
+    <h1> Our Services</h1>
+    <p class="services_info">Some of the key features of this website is listed below!<br><br><span style="font-size: 26px">Click On the Clip to view it!!</span></p>
+      <div class="container">
+        <div class="circle circle1">
+          <div class="content">
+            <h2>Send Mail to Anyone</h2>
+            <p>Yes. Send Mail to anybody who owns a Email ID!!<br>
+            Not only mail but you can also spam them by sending multiple emails(upto 50 Mails at a time).😃😃</p>
+          </div>
+        </div>
+        <div class="circle circle2">
+          <div class="content">
+            <h2>Secure Sign In Method for Verification</h2>
+            <p>We request you to signup to spam others just to verify that you're a human and not a bot.<br>
+            Nothing More, we do not share your Email IDs and other credentials to anyone!!</p>
+          </div>
+        </div>
+        <div class="circle circle3">
+          <div class="content">
+            <h2>Send To Mail to Multiple People at a time</h2>
+            <p>You can also send mail to multiple people at the same time.<br>
+            You just have to add <b>Single Comma(  ,  ) </b>after entering a mail address.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <section class="sec4" id="contact">
+        <div class="contactbox">
+                      <br><br><br>
+                      <h2>Know More About Us!!</h2>
+                      <p>Sign Up for our Newsletter. We will keep you updated with new thing in our website!!</p>
+                      <br>
+                      <form method="POST" id="contact-form" action="/contact">
+                        <i class="material-icons prefix" id="name_icon">account_circle</i>  
+                        <input type="text" id="name" name="name" placeholder="Enter Your name" required>
+                          <br><br>
+                        <i class="material-icons prefix" id="email_icon">email</i>
+                          <input type="email" class="validate" id="eid" name="eid" placeholder="Enter Email" required>
+                          <br><br>
+                          <i class="material-icons prefix" id="phone_icon">phone</i>
+                          <input type="tel" class="validate" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+                          <br><br>
+                          <input type="submit" id="contact" name="contact" class="contact" value="SUBMIT"> 
+                      </form>
+                        <div class="social_media">
+                          <br><br><br><br>
+                            <ul>
+                            <li><a href="" target="_blank"><img src="images/twitter.png"></a></li>&emsp;
+                            <li><a href="" target="_blank"><img src="images/instagram.png"></a></li>&emsp;
+                            <li><a href="" target="_blank"><img src="images/linkedin.png"></a></li>&emsp;
+                            <li><a href="" target="_blank"><img src="images/github.png"></a></li>
+                            </ul>
+                         </div>
+                         <p class="credits" style="text-align: right;font-size: 20px;">&emsp;Created By, Vijay Sai</p>
+                          </section>
+<nav>
+    <div class="logo">
+        <a href="#home"><img src="images/logo1.png"></a>
+    </div>
+    <ul class="navbar">
+        <li><a href="#home"><i class="material-icons" id="home_icon">home</i> Home</a></li>
+        <li><a href="#instructions"><i class="material-icons" id="about_icon">class</i>Instructions</a></li>
+        <li><a href="#services"><i class="material-icons" id="services_icon">settings</i>Services</a></li>   
+        <li><a href="#contact"><i class="material-icons" id="contact_icon">contacts</i> Contact</a></li>
+        <li><a href="login.html" class="alwayson"><i class="material-icons" id="login_icon">people</i> Login/Signup</a></li>
+    </ul>
+</nav>
+</body>
+</html>

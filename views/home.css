@@ -1,0 +1,267 @@
+
+::-webkit-scrollbar{
+    width:10px;
+    background: #000000;
+}
+::-webkit-scrollbar-track{
+    box-shadow: 0 0 5px #c6ce59;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(238, 208, 36);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(192, 170, 46); 
+}
+#scroll-percent {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    }
+
+    #percentage-value {
+        opacity:0.5;
+    position: fixed;
+    top: 90%;
+    margin: 10px;
+    transform: translate();
+    height: 50px;
+    width: 50px;
+    color: rgb(238, 208, 36);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 2px rgb(238, 208, 36), -1px -1px 8px 2px rgb(238, 208, 36); 
+    font-size: 16px;
+    z-index: 1;
+    }
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    background: #000000;
+}
+#home_icon,#login_icon,#contact_icon,
+#about_icon,#services_icon
+{
+    font-size: 30px;
+    position: relative;
+    top: 8px;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    transition: .5s;
+    background: #000000c7;
+    font-size: 16px;
+}
+nav.black
+{
+    background: rgb(0, 0, 0);
+    height: 80px;
+    padding: 10px 10px;
+}
+nav .logo
+{
+    position: relative;
+    float: left;
+    left: -40;
+}
+nav .logo img
+{
+    padding: 0 40px;
+    height: 50px;
+    width:200px;
+    transition: .5s;
+}
+nav.black .logo img
+{
+    height: 50px;
+}
+nav ul
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    line-height: 60px;
+    color: cornsilk;
+    padding: 20px 20px;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    transition: .5s;
+}
+nav.black ul li a
+{
+    color: #fff;
+    line-height: 60px;
+    font-size: 18px;
+}
+nav.black ul li.active a
+{
+    color: #000000;
+    line-height: 60px;
+    font-size: 18px;
+}
+nav ul li a.alwayson,
+nav ul li a:hover
+{
+    color: rgb(0, 0, 0);
+    background: rgb(238, 208, 36);
+    padding:30 20px;
+    font-size: 20px;
+}
+ul li.active a
+{
+    color: rgb(0, 0, 0);
+    background: rgb(238, 208, 36);
+    padding:30 20px;
+    font-size: 24px;
+}
+section.sec1
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg11.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+section.sec2
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg12.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+section.sec3
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+section.sec4
+{
+    width: 100%;
+    height: 100vh;
+    background: url(images/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.responsive-bar
+{
+    display: none;
+}
+@media (max-width: 1200px)
+{
+    .responsive-bar
+    {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #000000c7;
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 26px;
+        font-weight: bolder;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+    .responsive-bar .logo img
+    {
+        float: left;
+        height: 50px;
+    }
+    .responsive-bar .menu
+    {
+        float: right;
+        color: cornsilk;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .responsive-bar .menu:before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 50px;
+    }
+    .responsive-bar .menu.active:before
+    {
+        content: '\f00d';
+    }
+    nav,
+    nav.black
+    {
+        background: #000000c7;
+        height: 60px;
+        padding: 0;
+    }
+    nav .logo
+    {
+        display: none;
+    }
+    nav ul
+    {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #000000c7;
+        float: none;
+        display: none;
+    }
+    .navbar.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav ul li
+    {
+        width: 100%;
+    }
+    nav ul li a
+    {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color: cornsilk;
+    }
+}
+.WebContainer{
+    width:100%;
+    min-width:1000px;
+    height:auto;
+} 

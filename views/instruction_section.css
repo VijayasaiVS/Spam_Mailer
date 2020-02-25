@@ -1,0 +1,43 @@
+.instruction{
+    background: #000000b2;
+    width:100%;
+    color: cornsilk;
+    position: relative;
+    height:100%;
+}
+.instruct_title{
+    color:rgb(238, 208, 36);
+    text-align: center;
+    font-weight: bolder;
+    font-size:34px;
+    margin:0;
+    padding:10;
+}
+.instruction .steps_head{
+    padding:10;
+    margin:10;
+}
+.instruction li{
+    color:cornsilk;
+    font-weight: 500;
+}
+.instruction a{
+    text-decoration: none;
+    color: rgb(238, 208, 36);
+    font-size:20px;
+}
+.instruction .steps_head{
+    color:cornsilk;
+    font-weight: 500;
+    font-size: 26px;
+}
+.instruction .content{
+    text-align:center;
+    font-size: 24px;
+    color: rgb(238, 208, 36);
+}
+.instruction .terms{
+    padding:10;
+    font-size: 14px;
+    margin:0;
+}

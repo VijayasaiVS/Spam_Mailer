@@ -1,0 +1,87 @@
+.services_section{
+    position: relative;
+    background: #0000007c;
+    width:100%;
+    height:100vh;
+}
+.services_section .container{
+    position: relative;
+    bottom:200px;
+    width:100%;
+    height:100%;
+}
+h1
+{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(238, 208, 36);
+}
+.container .circle
+{
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 2s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .circle.circle1
+{
+    background: url(images/bg10.jpg);
+    clip-path: circle(100px at 25% center);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .circle.circle2
+{
+    background: url(images/bg13.jpg);
+    clip-path: circle(100px at 50% center);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container .circle.circle3
+{
+    background: url(images/bg14.jpg);
+    clip-path: circle(100px at 75% center);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.container .circle:hover{
+    z-index:1;
+}
+.container .circle:active{
+    clip-path: circle(800px at center);
+}
+.container .circle .content{
+    max-width:800px;
+    box-sizing: border-box;
+    padding:40px;
+    background: #000000a4;
+    opacity:0;
+    transition: 0.5s;
+}
+.container .circle:active .content{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.container .circle .content h2{
+    margin: 0;
+    padding:0;
+    color:rgb(238, 208, 36);
+    font-size:22px;
+}
+.container .circle .content p{
+    margin: 0;
+    padding:0;
+    color:cornsilk;
+    font-size:16px;
+}
+.services_info{
+    text-align: center;
+    color: cornsilk;
+    font-weight: 900;
+    font-size:18px;
+}

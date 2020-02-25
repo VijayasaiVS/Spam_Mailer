@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, intial-sacle=1.0">
+		<title>Login Form</title>
+			<!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ 
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="login.css"> 
+	</head>
+	<body>
+		<div class="loginBox">
+			<img src="images/user.png" class="user">
+			<br>
+			<h2>LOGIN</h2>
+			<form method="POST" id="login-form" action="login">
+				<div class="rows">
+					<div class="col s12">
+				<p>Email</p>
+				<input type="email" id="eid" name="eid" placeholder="Enter Email" required>
+				</div></div>
+				<br>
+				<div class="rows">
+						<div class="col s12">
+				<p>Password</p>
+				<input type="password" id="pass" name="pass" placeholder="••••••" required>
+				</div></div>
+				<br>
+				<input type="submit" id="login" class="login" value="LOGIN">
+				<br><br>
+				<p>New User? </p>
+				<br>
+				<a class="signup" href="signup.html">SIGN UP</a>
+				<br><br><br>
+				<p>Did You <a href="forgot_password.html"><u>Forget Password</u></a> for your account?</p>            
+            </form>
+		</div>
+		<br><br>&emsp;
+		<a class="backtohome" href="home.html"><i class="small material-icons">home</i></a>
+	</body>
+</html>

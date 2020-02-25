@@ -1,0 +1,190 @@
+::-webkit-scrollbar{
+    width:10px;
+    background: #000000;
+}
+::-webkit-scrollbar-track{
+    box-shadow: 0 0 5px #c6ce59;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(238, 208, 36);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(192, 170, 46); 
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(images/bg6.jpg);
+	background-size: cover;
+	font-family: "Poppins",sans-serif;
+	background-attachment: fixed;
+	background-color: #000000;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.loginBox
+{
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translate(-45%,-45%);
+	width: 75%;
+	height: 600px;
+	padding: 15px 50px;
+	box-sizing: border-box;
+}
+.mail
+{
+	width: 100px;
+	height: 100px;
+    border-radius: 50%;
+	overflow: hidden;
+    position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: rgb(238, 208, 36);
+	text-align: center;
+}
+.loginBox p
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color:rgb(238, 208, 36);
+}
+.loginBox input
+{
+	width: 100%;
+    margin-bottom: 20px;
+}
+#emailfrom::placeholder,#emailto::placeholder,
+#subject::placeholder,#message::placeholder
+{
+	color: rgb(196, 191, 175);
+}
+#emailfrom,#emailto,#subject,#message,#noofmail
+{
+	border: 2px solid cornsilk;
+	background: transparent;
+	height: 40px;
+	font-weight: bold;
+	color: cornsilk;
+	font-size: 16px;
+    padding: 0 5px;
+	margin: 10px;
+}
+#noofmail
+{
+	width:10%;
+}
+#emailfrom,#emailto,#subject{
+	width:75%;
+}
+#message
+{
+	width: 85%;
+}
+#emailfrom:focus,#emailto:focus,#subject:focus,#message:focus,
+#noofmail:focus{
+    border: 2px solid greenyellow;
+}
+.loginBox .sendmail
+{
+	position: relative;
+	left: 200px;
+	width:200px;
+	height:40px;
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;	
+}
+.loginBox .sendmail:hover
+{
+	color: #000000;
+	animation: animate 8s linear infinite;
+	font-size:22px;
+	font-weight: bolder;
+}
+@-webkit-keyframes animate{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+}
+.sendmail:before
+{
+	content: '';
+	position: absolute;
+	top:-5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg,rgb(238, 208, 36),#eeeb27,#c5c2268c,#85db22,#afe92a,#1fc593,#55a4a7,#4885ed,rgb(238, 208, 36));
+	border-radius: 60px;
+	filter: blur(60px);
+	opacity: 0;
+	transition: 0.5s;
+}
+a:hover:before
+{
+	filter: blur(20px);
+	opacity: 1;
+}
+.backtohome,.exit_logout,.resetall
+{
+	position: absolute;
+	transform: translate(10%);
+	width:60px;
+	height:30px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 16px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: rgb(238, 208, 36);
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;	
+}
+.backtohome:hover,.exit_logout:hover,.resetall:hover
+{
+	position: absolute;
+	transform: translate(10%);
+	width:80px;
+	height:50px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 20px;
+	line-height: 60px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	background: rgb(238, 208, 36);
+	background-size: 400%;
+	border-radius: 30px;
+	font-size: 20px;	
+}
